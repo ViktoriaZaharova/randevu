@@ -53,5 +53,43 @@ footer {
         color: #FF004D; }
 
 /*==========  footer end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  modal  ==========*/
+.modal-dialog {
+  max-width: 500px; }
+
+.modal-content {
+  border: 1px solid #E20036;
+    border-radius: 0;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-49.82%, #FF004C), color-stop(184.36%, #2C2C2C));
+  background: linear-gradient(180deg, #FF004C -49.82%, #2C2C2C 184.36%);
+  padding: 29px 35px; }
+
+.modal-header {
+  margin: 0 0 26px;
+  border: none;
+  padding: 0;
+  width: 100%; }
+
+.modal-body {
+  padding: 0;
+  width: 100%; }
+
+.input-title {
+  display: block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 35px; }
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600; }
+
+.btn-submit {
+  margin: 44px auto 48px;
+  max-width: 300px;
+  width: 100%; }
+
+/*==========  modal end  ==========*/

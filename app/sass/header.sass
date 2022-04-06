@@ -25,6 +25,32 @@ header
       justify-content: center
       &:hover
         color: $accent
+    .dropdown-item
+      justify-content: flex-start
+      margin: 0 0 15px
+      color: #000000
+      font-weight: 400
+      padding: 10px 25px
+      &:hover
+        color: $accent
+        background: transparent
+      &:last-child
+        margin: 0
+      &.active
+        background: transparent
+        color: $accent
+
+.dropdown-menu
+  margin: 8px 0 0
+  padding: 0
+  border: none
+    radius: 0
+  background: #FFFFFF
+  text-align: left
+  line-height: 20px
+  font-size: 20px
+
+
 
 .location-item
   color: #000000
@@ -42,11 +68,11 @@ header
 
 .dropdown-toggle
   &:after
-    border: none
-    width: 10px
-    height: 16px
-    background: url("../img/arrow-bottom.svg") no-repeat center
-      size: 100%
+    display: none
+  &__icon
+    width: 16px
+    height: 10px
+    fill: #000000
     margin: 0 0 0 10px
 
 /*==========  header end  ==========*/

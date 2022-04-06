@@ -80,6 +80,7 @@
   h2
     margin: 0 auto 60px
 
+
 .blog-box
   width: 100%
   &__bg
@@ -133,6 +134,8 @@
 .view
   display: flex
   align-items: center
+  width: fit-content
+  margin: 0 0 0 auto
   font-size: 18px
   font-weight: 300
   color: #6B6B6B
@@ -143,18 +146,151 @@
     width: 24px
     min-width: 24px
 
+.blog-section
+  margin: 50px 0 65px
+  h3
+    font-size: 30px
+    line-height: 35px
+    font-weight: 600
+  &__title
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  .list-rating
+    margin: 0 0 0 25px
+  .box-text
+    color: #000000
+    font-size: 18px
+    font-weight: 300
+    line-height: 25px
+    p
+      margin: 0 0 25px
+      &:last-child
+        margin: 0
+  &__img
+    margin: 0 0 50px
+    width: 100%
+    img
+      width: 100%
+
+.blog-section-item
+  padding: 21px 0 60px
+  border:
+    top: 3px solid $accent
+    bottom: 3px solid $accent
+
+.share
+  display: flex
+  align-items: center
+  margin: 15px 0 0
+  font-size: 20px
+  font-weight: 600
+  p
+    margin: 0 10px 0 0
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 5px 0 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 35px
+      height: 35px
+      padding: 5px
 
 /*==========  section blog end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section advantages ==========*/
+.advantages
+  margin: 50px 0 15px
 
-/*==========  section end  ==========*/
+.advantages-box
+  text-align: center
+  font-size: 24px
+  line-height: 35px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background: $accent
+    margin: 0 auto 33px
+    width: 100px
+    height: 100px
+    padding: 25px
+    position: relative
+  &__text
+    padding: 16px 0 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%,0)
+      width: 100px
+      height: 3px
+      background: #000
+
+/*==========  section advantages end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section latest-articles ==========*/
+.latest-articles
+  margin: 69px 0 92px
+  h2
+    margin: 0 auto 60px
 
-/*==========  section end  ==========*/
+.latest-articles-slider
+  .slick-slide
+    padding: 0 13px
+  .slick-list
+    margin: 0 -13px
+
+.latest-article-item
+  position: relative
+  width: 100%
+  height: 200px
+  display: flex
+  align-items: flex-end
+  justify-content: flex-start
+  color: #fff
+  padding: 24px 49px
+  line-height: 35px
+  &__img
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    backdrop-filter: blur(5px)
+    background: rgba(39, 39, 39, 0.45)
+    z-index: 1
+  &__content
+    width: 100%
+    position: relative
+    z-index: 1
+  &__title
+    font-size: 24px
+  &__subtitle
+    font-size: 20px
+    font-weight: 300
+
+/*==========  section latest-articles end  ==========*/
 
 
 /*==========  section  ==========*/
