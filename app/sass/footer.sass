@@ -84,8 +84,85 @@ footer
   font-weight: 600
 
 .btn-submit
-  margin: 44px auto 48px
+  margin: 44px auto 24px
   max-width: 300px
   width: 100%
+
+.links-registration
+  margin: 48px auto 0
+
+.form
+  label
+    position: relative
+
+.btn-view-password
+  position: absolute
+  bottom: 16px
+  right: 19px
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+
+.consent
+  text-align: center
+  margin: 24px auto 0
+  font-size: 12px
+  line-height: 15px
+  font-weight: 300
+  max-width: 350px
+
+.form-group
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  margin: 38px 0 0
+
+.radio
+  width: calc(50% - 15px)
+  margin: 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.radio-custom
+  width: 25px
+  height: 25px
+  min-width: 25px
+  position: relative
+  background: #C4C4C4
+  margin: 0 10px 0 0
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 15px
+    height: 15px
+    background: #fff
+
+.radio-text
+  font-size: 16px
+  font-weight: 400
+
+.radio-subtext
+  margin: 10px 0 0
+  width: 100%
+  display: block
+  font-size: 12px
+  font-weight: 300
+
+.inp-radio
+  display: none
+
+.inp-radio:checked + .radio-custom
+  &:before
+    background: $accent
+
 /*==========  modal end  ==========*/
 

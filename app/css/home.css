@@ -155,6 +155,8 @@
             justify-content: flex-end; }
     .blog-box__content span {
       display: block; }
+  .blog-box .view {
+    margin: 0; }
 
 .list-rating {
   display: -webkit-box;
@@ -226,8 +228,6 @@
     line-height: 25px; }
     .blog-section .box-text p {
       margin: 0 0 25px; }
-      .blog-section .box-text p:last-child {
-        margin: 0; }
   .blog-section__img {
     margin: 0 0 50px;
     width: 100%; }

@@ -2,7 +2,8 @@
 header {
   background: #fff;
   border-bottom: 5px solid #FF004D;
-  padding: 27.5px 0; }
+  padding: 27.5px 0;
+  position: relative; }
   header .logo {
     margin: 0 auto 0 0; }
 
@@ -83,6 +84,8 @@ header {
     margin: 0 18px 0 0;
     width: 18px;
     height: 25px; }
+  .location-item:hover {
+    color: #FF004D; }
 
 .dropdown-toggle:after {
   display: none; }
@@ -93,6 +96,162 @@ header {
   fill: #000000;
   margin: 0 0 0 10px; }
 
+.location-cities {
+  max-width: 740px;
+  width: 100%;
+  background: #E8E8E8;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  top: 100%;
+  position: absolute;
+  z-index: 2;
+  margin: 15px 0 0;
+  border-top: 3px solid #FF004C;
+  padding: 11px 26px 26px 20px;
+  display: none; }
+
+.search-text {
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 13px 0 30px; }
+
+.form-search {
+  width: 100%;
+  position: relative; }
+  .form-search input {
+    background: #fff;
+    height: 40px;
+    color: #6B6B6B;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 40px 0 15px; }
+    .form-search input::-webkit-input-placeholder {
+      color: #6B6B6B; }
+    .form-search input::-moz-placeholder {
+      color: #6B6B6B; }
+    .form-search input::-ms-input-placeholder {
+      color: #6B6B6B; }
+    .form-search input::placeholder {
+      color: #6B6B6B; }
+
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  border: none;
+    border-radius: 0;
+  width: 24px;
+  height: 24px;
+  right: 5px;
+  position: absolute;
+  top: 8px;
+  fill: #000000; }
+
+.list-cities {
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
+  line-height: 20px; }
+  .list-cities li {
+    margin: 0 0 20px; }
+    .list-cities li a {
+      font-size: 20px;
+      color: #000; }
+      .list-cities li a:hover {
+        color: #FF004D; }
+
+.location-cities-body {
+  max-height: 660px;
+  overflow-y: auto; }
+
+.btn-burger {
+  width: 30px;
+  height: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .btn-burger span {
+    height: 3px;
+    width: 100%;
+    display: block;
+    background: #000; }
+
 /*==========  header end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  mobile-menu  ==========*/
+.mobile-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 66px;
+  width: 100%;
+  background: #2C2C2C;
+  z-index: 3;
+  height: calc(100% - 66px);
+  overflow-y: auto;
+  padding: 42px 18px 86px; }
+  .mobile-menu .list-cities {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  .mobile-menu .menu {
+    margin: 58px 0;
+    font-size: 20px;
+    display: block; }
+    .mobile-menu .menu li {
+      margin: 0 0 15px;
+      width: 100%; }
+      .mobile-menu .menu li a {
+        color: #fff; }
+      .mobile-menu .menu li .dropdown-item {
+        color: #000000;
+        font-size: 20px;
+        margin: 0; }
+        .mobile-menu .menu li .dropdown-item.active {
+          color: #FF004D; }
+      .mobile-menu .menu li .dropdown-toggle__icon {
+        fill: #fff; }
+    .mobile-menu .menu .dropdown-menu {
+      position: relative !important;
+      margin: 10px 0 0;
+      top: 0 !important;
+      left: 0 !important;
+      -webkit-transform: none !important;
+              transform: none !important;
+      width: 100%; }
+    .mobile-menu .menu .show .dropdown-toggle {
+      color: #FF004D; }
+    .mobile-menu .menu .show .dropdown-toggle__icon {
+      fill: #FF004D; }
+  .mobile-menu .location-item {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .mobile-menu .location-cities-body {
+    max-height: 628px; }
+
+.btn-cabinet {
+  width: 100%; }
+
+.location-wrapper {
+  position: relative;
+  width: 100%; }
+
+/*==========  mobile-menu end  ==========*/
