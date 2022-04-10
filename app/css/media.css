@@ -20,7 +20,21 @@
     .latest-articles h2 {
       margin: 0 auto 45px; }
   .menu li a {
-    min-width: 100px; } }
+    min-width: 100px; }
+  .catalog-card__body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .characteristics-box-user, .characteristics-box {
+    margin: 0; }
+  .price-wrapper {
+    margin: 0 30px 0 0; }
+  .catalog-card__content {
+    padding: 0; }
+  .catalog-card {
+    padding: 30px 30px 30px 260px; }
+  .category-links {
+    font-size: 16px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -76,7 +90,13 @@
       .menu > li:last-child {
         margin: 0; }
       .menu > li a {
-        min-width: auto; } }
+        min-width: auto; }
+  .sidebar {
+    display: none; }
+  .btn-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -110,7 +130,95 @@
   .btn-burger {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .catalog {
+    margin: 30px 0 50px; }
+    .catalog h1 {
+      text-align: left;
+      margin: 0 0 20px; }
+  .nav-breadcrumb {
+    margin: 30px 0; }
+  .sorting-wrapper {
+    display: none; }
+  .filter-wrapper {
+    margin: 0 0 20px; }
+  .catalog-card {
+    padding: 28px 22px 23px; }
+    .catalog-card__image {
+      position: relative;
+      top: 0;
+      left: 0;
+      max-width: 134px; }
+    .catalog-card__img {
+      width: 134px;
+      height: 134px; }
+    .catalog-card__head {
+      width: calc(100% - 134px);
+      padding: 0 0 0 40px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .catalog-card__body {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin: 20px 0 0; }
+    .catalog-card__footer {
+      margin: 0;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+    .catalog-card__nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+  .button-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .price-wrapper {
+    margin: 0 0 10px; }
+  .add-favorite {
+    margin: 0 0 15px; }
+  .phone-user {
+    margin: 15px 0 0; }
+  .location-user {
+    width: 100%;
+    margin: 0 0 19px; }
+  .location-user-item {
+    margin: 0;
+    width: 50%; }
+  .characteristics-box {
+    width: 50%;
+    margin: 0 0 25px; }
+    .characteristics-box:last-child {
+      margin: 0; }
+  .status-user {
+    margin: 0; }
+  .sidebar {
+    background: #E8E8E8;
+    padding: 27px 10px 33px;
+    overflow-y: auto;
+    margin: 0 0 30px; }
+    .sidebar .category-links {
+      display: none; }
+  .form-filter {
+    margin: 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -241,10 +349,45 @@
   .form-group {
     margin: 30px 0 0; }
   .radio {
-    width: 50%; } }
-
-@media only screen and (max-width: 480px) {
-  /**/ }
+    width: 50%; }
+  .catalog h1 {
+    font-size: 18px; }
+  .catalog-card__title {
+    font-size: 18px; }
+  .catalog-card .list-rating {
+    margin: 0 0 11px; }
+  .characteristics-box {
+    font-size: 12px; }
+    .characteristics-box h4 {
+      margin: 0 0 9px; }
+  .list-characteristics li {
+    margin: 0 0 10px; }
+  .phone-user {
+    font-size: 14px; }
+  .status-user, .phone-user__icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px; }
+  .phone-user__icon .svg-icon {
+    width: 14px;
+    height: 14px; }
+  .position-user {
+    font-size: 11px; }
+  .questionnaires {
+    font-size: 14px; }
+  .checkbox {
+    font-size: 14px; }
+  .accordion .card {
+    max-width: 196px; }
+  .accordion .card-header {
+    padding: 7px 0;
+    font-size: 18px; }
+    .accordion .card-header.collapsed {
+      padding: 8px 13px 8px 20px; }
+  .accordion .card-body {
+    padding: 10px 0 0; }
+  .breadcrumb {
+    font-size: 14px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
@@ -259,4 +402,13 @@
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .catalog-card__head {
+    padding: 0 0 0 20px; }
+  .catalog-card__img {
+    width: 110px;
+    height: 110px; }
+  .catalog-card__image {
+    max-width: 110px; }
+  .catalog-card__head {
+    width: calc(100% - 110px); } }

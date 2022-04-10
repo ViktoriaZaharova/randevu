@@ -65,3 +65,9 @@ $('.mobile-menu .location-item').on('click', function (e) {
 $('.btn-burger').on('click', function () {
    $('.mobile-menu').fadeToggle();
 });
+
+
+$('.btn-filter').on('click', function () {
+    $(this).toggleClass('open');
+    $('.sidebar').slideToggle();
+});

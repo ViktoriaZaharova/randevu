@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Randevu</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="location-wrapper">
+    <a href="#" class="location-item">
+      <span class="location-item__icon"><img src="img/location.svg" alt=""></span>
+      <span class="location-item__text">Выбрать город</span>
+    </a>
+
+    <div class="location-cities">
+      <form method="post" class="form-search">
+        <label><input type="text" placeholder="Найти город"></label>
+        <button type="submit" class="btn-search">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+
+      <div class="location-cities-body">
+
+        <ul class="list-cities my-ul">
+          <li><a href="#">Абаза</a></li>
+          <li><a href="#">Абакан</a></li>
+          <li><a href="#">Абдулино</a></li>
+          <li><a href="#">Абинск</a></li>
+          <li><a href="#">Агидель</a></li>
+          <li><a href="#">Агрыз</a></li>
+          <li><a href="#">Адыгейск</a></li>
+          <li><a href="#">Азнакаево</a></li>
+          <li><a href="#">Азов</a></li>
+          <li><a href="#">Ак-Довурак</a></li>
+          <li><a href="#">Аксай</a></li>
+          <li><a href="#">Алагир</a></li>
+          <li><a href="#">Алапаевск</a></li>
+          <li><a href="#">Алатырь</a></li>
+          <li><a href="#">Алдан</a></li>
+          <li><a href="#">Артёмовский</a></li>
+          <li><a href="#">Архангельск</a></li>
+          <li><a href="#">Асбест</a></li>
+          <li><a href="#">Асино</a></li>
+          <li><a href="#">Астрахань</a></li>
+          <li><a href="#">Аткарск</a></li>
+          <li><a href="#">Ахтубинск</a></li>
+          <li><a href="#">Ачинск</a></li>
+          <li><a href="#">Аша</a></li>
+          <li><a href="#">Бабаево</a></li>
+          <li><a href="#">Бабушкин</a></li>
+          <li><a href="#">Бавлы</a></li>
+          <li><a href="#">Багратионовск</a></li>
+          <li><a href="#">Байкальск</a></li>
+          <li><a href="#">Баймак</a></li>
+          <li><a href="#">Бакал</a></li>
+          <li><a href="#">Баксан</a></li>
+          <li><a href="#">Балабаново</a></li>
+          <li><a href="#">Балаково</a></li>
+          <li><a href="#">Балахна</a></li>
+          <li><a href="#">Балашиха</a></li>
+          <li><a href="#">Балашов</a></li>
+          <li><a href="#">Барыш</a></li>
+          <li><a href="#">Батайск</a></li>
+          <li><a href="#">Бахчисарайн</a></li>
+          <li><a href="#">Барыш</a></li>
+          <li><a href="#">Батайск</a></li>
+          <li><a href="#">Бахчисарай</a></li>
+          <li><a href="#">Бежецк</a></li>
+          <li><a href="#">Белая Калитва</a></li>
+          <li><a href="#">Белебей</a></li>
+          <li><a href="#">Белёв</a></li>
+          <li><a href="#">Белинский</a></li>
+          <li><a href="#">Белово</a></li>
+          <li><a href="#">Белогорск</a></li>
+          <li><a href="#">Белозерск</a></li>
+          <li><a href="#">Белебей</a></li>
+          <li><a href="#">Белоусово</a></li>
+          <li><a href="#">Билибино</a></li>
+          <li><a href="#">Бирск</a></li>
+          <li><a href="#">Бирюч</a></li>
+          <li><a href="#">Бобров</a></li>
+          <li><a href="#">Богородицк</a></li>
+          <li><a href="#">Болгар</a></li>
+          <li><a href="#">Бор</a></li>
+
+          <li><a href="#">Бежецк</a></li>
+          <li><a href="#">Белая Калитва</a></li>
+          <li><a href="#">Белебей</a></li>
+          <li><a href="#">Белёв</a></li>
+          <li><a href="#">Белинский</a></li>
+          <li><a href="#">Белово</a></li>
+          <li><a href="#">Белогорск</a></li>
+          <li><a href="#">Белозерск</a></li>
+          <li><a href="#">Белебей</a></li>
+          <li><a href="#">Белоусово</a></li>
+          <li><a href="#">Билибино</a></li>
+          <li><a href="#">Бирск</a></li>
+          <li><a href="#">Бирюч</a></li>
+          <li><a href="#">Бобров</a></li>
+          <li><a href="#">Богородицк</a></li>
+          <li><a href="#">Болгар</a></li>
+          <li><a href="#">Бор</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <ul class="menu my-ul">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Салоны
+        <svg class="svg-icon dropdown-toggle__icon">
+          <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+        </svg>
+      </a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Все</a>
+        <a href="#" class="dropdown-item active">Частные</a>
+        <a href="#" class="dropdown-item">Девушки из салонов</a>
+        <a href="#" class="dropdown-item">Салоны</a>
+        <a href="#" class="dropdown-item">Новые анкеты</a>
+        <a href="#" class="dropdown-item">Свободны сейчас</a>
+        <a href="#" class="dropdown-item">VIP</a>
+      </div>
+    </li>
+    <li><a href="catalog.html">Анкеты</a></li>
+    <li><a href="blog.html">Блог</a></li>
+  </ul>
+
+  <a href="#" class="btn btn-md btn-accent btn-cabinet" data-toggle="modal" data-target="#entranceModal">Личный
+    кабинет</a>
+</div>
+
+<!--### HEADER ###-->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <ul class="menu my-ul">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Салоны
+              <svg class="svg-icon dropdown-toggle__icon">
+                <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Все</a>
+              <a href="#" class="dropdown-item active">Частные</a>
+              <a href="#" class="dropdown-item">Девушки из салонов</a>
+              <a href="#" class="dropdown-item">Салоны</a>
+              <a href="#" class="dropdown-item">Новые анкеты</a>
+              <a href="#" class="dropdown-item">Свободны сейчас</a>
+              <a href="#" class="dropdown-item">VIP</a>
+            </div>
+          </li>
+          <li><a href="catalog.html">Анкеты</a></li>
+          <li><a href="blog.html">Блог</a></li>
+        </ul>
+
+        <a href="#" class="location-item">
+          <span class="location-item__icon"><img src="img/location.svg" alt=""></span>
+          <span class="location-item__text">Москва</span>
+        </a>
+
+        <a href="#" class="btn btn-md btn-accent d-none d-md-flex" data-toggle="modal" data-target="#entranceModal">Личный
+          кабинет</a>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="location-cities">
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Найти город"></label>
+            <button type="submit" class="btn-search">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="location-cities-body">
+            <div class="search-text">Искать по <a href="#" class="d-inline color-accent">всей стране</a></div>
+
+            <ul class="list-cities my-ul">
+              <li><a href="#">Абаза</a></li>
+              <li><a href="#">Абакан</a></li>
+              <li><a href="#">Абдулино</a></li>
+              <li><a href="#">Абинск</a></li>
+              <li><a href="#">Агидель</a></li>
+              <li><a href="#">Агрыз</a></li>
+              <li><a href="#">Адыгейск</a></li>
+              <li><a href="#">Азнакаево</a></li>
+              <li><a href="#">Азов</a></li>
+              <li><a href="#">Ак-Довурак</a></li>
+              <li><a href="#">Аксай</a></li>
+              <li><a href="#">Алагир</a></li>
+              <li><a href="#">Алапаевск</a></li>
+              <li><a href="#">Алатырь</a></li>
+              <li><a href="#">Алдан</a></li>
+              <li><a href="#">Артёмовский</a></li>
+              <li><a href="#">Архангельск</a></li>
+              <li><a href="#">Асбест</a></li>
+              <li><a href="#">Асино</a></li>
+              <li><a href="#">Астрахань</a></li>
+              <li><a href="#">Аткарск</a></li>
+              <li><a href="#">Ахтубинск</a></li>
+              <li><a href="#">Ачинск</a></li>
+              <li><a href="#">Аша</a></li>
+              <li><a href="#">Бабаево</a></li>
+              <li><a href="#">Бабушкин</a></li>
+              <li><a href="#">Бавлы</a></li>
+              <li><a href="#">Багратионовск</a></li>
+              <li><a href="#">Байкальск</a></li>
+              <li><a href="#">Баймак</a></li>
+              <li><a href="#">Бакал</a></li>
+              <li><a href="#">Баксан</a></li>
+              <li><a href="#">Балабаново</a></li>
+              <li><a href="#">Балаково</a></li>
+              <li><a href="#">Балахна</a></li>
+              <li><a href="#">Балашиха</a></li>
+              <li><a href="#">Балашов</a></li>
+              <li><a href="#">Барыш</a></li>
+              <li><a href="#">Батайск</a></li>
+              <li><a href="#">Бахчисарайн</a></li>
+              <li><a href="#">Барыш</a></li>
+              <li><a href="#">Батайск</a></li>
+              <li><a href="#">Бахчисарай</a></li>
+              <li><a href="#">Бежецк</a></li>
+              <li><a href="#">Белая Калитва</a></li>
+              <li><a href="#">Белебей</a></li>
+              <li><a href="#">Белёв</a></li>
+              <li><a href="#">Белинский</a></li>
+              <li><a href="#">Белово</a></li>
+              <li><a href="#">Белогорск</a></li>
+              <li><a href="#">Белозерск</a></li>
+              <li><a href="#">Белебей</a></li>
+              <li><a href="#">Белоусово</a></li>
+              <li><a href="#">Билибино</a></li>
+              <li><a href="#">Бирск</a></li>
+              <li><a href="#">Бирюч</a></li>
+              <li><a href="#">Бобров</a></li>
+              <li><a href="#">Богородицк</a></li>
+              <li><a href="#">Болгар</a></li>
+              <li><a href="#">Бор</a></li>
+
+              <li><a href="#">Бежецк</a></li>
+              <li><a href="#">Белая Калитва</a></li>
+              <li><a href="#">Белебей</a></li>
+              <li><a href="#">Белёв</a></li>
+              <li><a href="#">Белинский</a></li>
+              <li><a href="#">Белово</a></li>
+              <li><a href="#">Белогорск</a></li>
+              <li><a href="#">Белозерск</a></li>
+              <li><a href="#">Белебей</a></li>
+              <li><a href="#">Белоусово</a></li>
+              <li><a href="#">Билибино</a></li>
+              <li><a href="#">Бирск</a></li>
+              <li><a href="#">Бирюч</a></li>
+              <li><a href="#">Бобров</a></li>
+              <li><a href="#">Богородицк</a></li>
+              <li><a href="#">Болгар</a></li>
+              <li><a href="#">Бор</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+<!--### HEADER end ###-->
+
+<section class="catalog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="nav-breadcrumb">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Категории</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8 col-lg-3">
+        <h1>Категории</h1>
+      </div>
+
+      <div class="col-4 d-block d-lg-none">
+        <div class="questionnaires">1835 анкет</div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <div class="filter-wrapper">
+          <div class="sorting-wrapper">
+            <p>Сортировать по:</p>
+            <a href="#" class="sorting-item active">популярности</a>
+            <a href="#" class="sorting-item">рейтингу</a>
+            <a href="#" class="sorting-item">цене</a>
+          </div>
+
+          <div class="dropdown dropdown-sorting d-block d-md-none">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">По цене</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item active">По цене</a>
+              <a href="#" class="dropdown-item">По популярности</a>
+              <a href="#" class="dropdown-item">По рейтингу</a>
+            </div>
+          </div>
+
+          <div class="questionnaires d-none d-lg-block">1835 анкет</div>
+          <div class="btn-filter">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#btn-filter"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="sidebar">
+          <a href="#" class="category-links">Все</a>
+          <a href="#" class="category-links">Частные</a>
+          <a href="#" class="category-links">Девушки из салонов</a>
+          <a href="#" class="category-links">Салоны</a>
+          <a href="#" class="category-links">Новые анкеты</a>
+          <a href="#" class="category-links">Свободны сейчас</a>
+          <a href="#" class="category-links">VIP</a>
+
+          <form method="post" class="form-filter">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                     aria-expanded="true" aria-controls="collapseOne">
+                  <div class="collapse-text">Тип анкеты</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Частная</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Салон</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                     aria-expanded="false" aria-controls="collapseTwo" id="headingTwo">
+                  <div class="collapse-text">Пол</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox1" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox1">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+                     aria-expanded="false" aria-controls="collapseThree">
+                  <div class="collapse-text">Город</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox3" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox3">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header collapsed" id="headingFour" data-toggle="collapse" data-target="#collapseFour"
+                     aria-expanded="false" aria-controls="collapseFour">
+                  <div class="collapse-text">Метро/район</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox4" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox4">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header collapsed" id="heading5" data-toggle="collapse" data-target="#collapse5"
+                     aria-expanded="false" aria-controls="collapse5">
+                  <div class="collapse-text">Кому</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox5" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox5">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header collapsed" id="heading6" data-toggle="collapse" data-target="#collapse6"
+                     aria-expanded="false" aria-controls="collapse6">
+                  <div class="collapse-text">Цена</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox6" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox6">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header collapsed" id="heading7" data-toggle="collapse" data-target="#collapse7"
+                     aria-expanded="false" aria-controls="collapse7">
+                  <div class="collapse-text">Возраст</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox7" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox7">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8"
+                     aria-expanded="false" aria-controls="collapse8">
+                  <div class="collapse-text">Рост</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox8" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox8">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header collapsed" id="heading9" data-toggle="collapse" data-target="#collapse9"
+                     aria-expanded="false" aria-controls="collapse9">
+                  <div class="collapse-text">Вес</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox9" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox9">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header collapsed" id="heading10" data-toggle="collapse" data-target="#collapse10"
+                     aria-expanded="false" aria-controls="collapse10">
+                  <div class="collapse-text">Грудь</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox10" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Мужской</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox10">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading11" data-toggle="collapse" data-target="#collapse11"
+                     aria-expanded="false" aria-controls="collapse11">
+                  <div class="collapse-text">Дополнительно</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapse11" class="collapse show" aria-labelledby="heading11" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Джакузи</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Сауна</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Бассейн</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">ТВ</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Wi-fi</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Бар</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Караоке</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Парковка</span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-check" name="checkbox11">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Кондиционер</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading12" data-toggle="collapse" data-target="#collapse12"
+                     aria-expanded="false" aria-controls="collapse12">
+                  <div class="collapse-text">Фото проверено</div>
+                  <div class="collapse-icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapse12" class="collapse show" aria-labelledby="heading12" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <label class="checkbox">
+                      <input type="radio" class="inp-check" name="checkbox12" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Да</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <div class="catalog-card">
+          <div class="catalog-card__image">
+            <a href="#" class="catalog-card__img"><img src="img/product1.jpeg" alt="">
+              <ul class="list-rating my-ul d-none d-md-flex">
+                <li><img src="img/star1.svg" alt=""></li>
+                <li><img src="img/star1.svg" alt=""></li>
+                <li><img src="img/star1.svg" alt=""></li>
+                <li><img src="img/star1.svg" alt=""></li>
+                <li><img src="img/star0.svg" alt=""></li>
+              </ul>
+            </a>
+            <div class="catalog-card-contacts d-none d-md-flex">
+              <div class="status-user">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#star-max"></use>
+                </svg>
+              </div>
+              <a href="#" class="phone-user">
+                <span class="phone-user__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#phone2"></use></svg></span>
+                <span class="phone-user__text">Жду звонка</span>
+              </a>
+            </div>
+          </div>
+          <div class="catalog-card__head">
+            <ul class="list-rating my-ul d-flex d-md-none">
+              <li><img src="img/star1.svg" alt=""></li>
+              <li><img src="img/star1.svg" alt=""></li>
+              <li><img src="img/star1.svg" alt=""></li>
+              <li><img src="img/star1.svg" alt=""></li>
+              <li><img src="img/star0.svg" alt=""></li>
+            </ul>
+            <div class="catalog-card__name">
+              <a href="#" class="catalog-card__title">Анастасия
+                <span class="verification"><img src="img/verification.svg" alt=""></span>
+              </a>
+              <div class="position-user">Частная эромассажистка г.Москвы</div>
+            </div>
+
+            <a href="#" class="phone-user d-flex d-md-none">
+                <span class="phone-user__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#phone2"></use></svg></span>
+              <span class="phone-user__text">Жду звонка</span>
+            </a>
+
+            <div class="location-user d-none d-md-flex">
+              <div class="location-user-item">
+                <div class="location-user-item__icon"><img src="img/taxi.png" alt=""></div>
+                <div class="location-user-item__text">Выезд</div>
+              </div>
+              <div class="location-user-item">
+                <div class="location-user-item__icon"><img src="img/house.png" alt=""></div>
+                <div class="location-user-item__text">У себя</div>
+              </div>
+            </div>
+
+            <a href="#" class="add-favorite d-none d-md-flex">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#favorite"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="catalog-card__body">
+            <div class="location-user d-flex d-md-none">
+              <div class="location-user-item">
+                <div class="location-user-item__icon"><img src="img/taxi.png" alt=""></div>
+                <div class="location-user-item__text">Выезд</div>
+              </div>
+              <div class="location-user-item">
+                <div class="location-user-item__icon"><img src="img/house.png" alt=""></div>
+                <div class="location-user-item__text">У себя</div>
+              </div>
+            </div>
+
+            <div class="characteristics-box characteristics-box-user">
+              <ul class="list-characteristics my-ul">
+                <li>
+                  <p>Возраст</p><span>27 лет</span>
+                </li>
+                <li>
+                  <p>Рост</p><span>178 см</span>
+                </li>
+                <li>
+                  <p>Вес</p><span>59 кг</span>
+                </li>
+                <li>
+                  <p>Грудь</p><span>3</span>
+                </li>
+              </ul>
+            </div>
+            <div class="characteristics-box">
+              <h4>Метро/район</h4>
+              <ul class="list-characteristics list-characteristics-address my-ul">
+                <li>
+                  <div class="icon-auto"><img src="img/bus.png" alt=""></div>
+                  <span>ст.м ВДНХ</span>
+                </li>
+                <li>
+                  <div class="icon-auto"><img src="img/bus.png" alt=""></div>
+                  <span>р. Алтуфьево</span>
+                </li>
+                <li>
+                  <div class="icon-auto"><img src="img/bus.png" alt=""></div>
+                  <span>ст. м Китай-город</span>
+                </li>
+              </ul>
+            </div>
+            <div class="characteristics-box">
+              <h4>Режим работы</h4>
+              <ul class="list-characteristics my-ul">
+                <li>
+                  <p>ПН-ПТ</p><span><img src="img/clock.svg" alt="" class="icon-time"> 9-24</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="status-user d-flex d-md-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star-max"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="catalog-card__footer">
+            <div class="button-group">
+              <div class="price-wrapper">
+                <div class="price-value">3 500 ₽</div>
+                <div class="price-time">в час</div>
+              </div>
+
+              <a href="#" class="btn btn-border-accent">Показать номер</a>
+            </div>
+
+            <div class="catalog-card__nav">
+              <a href="#" class="add-favorite d-flex d-md-none">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#favorite"></use>
+                </svg>
+              </a>
+              <a href="#" class="comment-links">
+                <span class="comment-links__text">25</span>
+                <span class="comment-links__icon"><img src="img/chat.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--### SECTION  ###-->
+<div class="attention-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="attention-info-box">
+          <div class="attention-info-box__icon"><img src="img/icon1.png" alt=""></div>
+          <div class="attention-info-box__text">Для лиц старше 18 лет</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="attention-info-box">
+          <div class="attention-info-box__icon"><img src="img/icon2.png" alt=""></div>
+          <div class="attention-info-box__text">Не публикуем анкеты с интим-услугами, только объявления об эротическом
+            массаже
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="attention-info-box">
+          <div class="attention-info-box__icon"><img src="img/icon3.png" alt=""></div>
+          <div class="attention-info-box__text">Есть противопоказания,перед сеансом проконсультируйтесь с врачом</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--### SECTION END ###-->
+
+<!--### FOOTER  ###-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-lg-5">
+        <ul class="footer-menu my-ul">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-4">
+        <ul class="footer-menu my-ul">
+          <li><a href="#">Объявления</a></li>
+          <li><a href="#">Салоны</a></li>
+          <li><a href="#">Анкеты</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="links-chat">
+            <span class="links-chat__icon"><img src="img/chat.svg" alt=""></span>
+            <span class="links-chat__text">Связаться
+с администрацией</span>
+          </a>
+
+          <a href="#" class="links">image: freepik.com</a>
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!--### FOOTER END ###-->
+
+<!-- Модальное окно -->
+<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Вход</h5>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <span class="input-title">Ваш e-mail</span>
+            <input type="text" name="mail" required>
+          </label>
+          <label>
+            <span class="input-title">Ваш пароль</span>
+            <input type="text" name="password" required>
+          </label>
+
+          <button type="submit" class="btn btn-black btn-submit btn-xl">Войти</button>
+        </form>
+
+        <a href="#" class="links-white links-registration" data-dismiss="modal" data-target="#registrationModal"
+           data-toggle="modal">Зарегистрироваться</a>
+        <a href="#" class="links-white" data-dismiss="modal" data-target="#passwordModal" data-toggle="modal">Забыли
+          пароль?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Регистрация</h5>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <span class="input-title">Ваше имя</span>
+            <input type="text" name="name">
+          </label>
+          <label>
+            <span class="input-title">Ваш e-mail</span>
+            <input type="text" name="mail" required>
+          </label>
+          <label>
+            <span class="input-title">Ваш пароль</span>
+            <span class="btn-view-password"><img src="img/view-black.svg" alt=""></span>
+            <input type="password" class="input-password" name="password" value="" required>
+          </label>
+          <label>
+            <span class="input-title">Ваш пароль</span>
+            <span class="btn-view-password"><img src="img/no-view.svg" alt=""></span>
+            <input type="password" class="input-password" name="double_password" required>
+          </label>
+
+          <div class="form-group">
+            <label class="radio">
+              <input type="radio" name="radio" class="inp-radio">
+              <span class="radio-custom"></span>
+              <span class="radio-text">Массажист/салон</span>
+              <span class="radio-subtext">Для размещения анкеты</span>
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="radio" class="inp-radio" checked>
+              <span class="radio-custom"></span>
+              <span class="radio-text">Клиент</span>
+              <span class="radio-subtext">Для написания отзывов и личных сообщений массажистам</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-black btn-submit btn-xl">Зарегистрироваться</button>
+          <div class="consent">Нажимая кнопку Вы принимаете Пользовательское соглашение
+            и Политику обработки персональных данных
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

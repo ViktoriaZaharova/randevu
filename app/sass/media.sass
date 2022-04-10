@@ -26,6 +26,25 @@
   .menu li a
     min-width: 100px
 
+  .catalog-card__body
+    justify-content: space-between
+
+  .characteristics-box-user, .characteristics-box
+    margin: 0
+
+  .price-wrapper
+    margin: 0 30px 0 0
+
+  .catalog-card__content
+    padding: 0
+
+  .catalog-card
+    padding: 30px 30px 30px 260px
+
+  .category-links
+    font-size: 16px
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .footer-box
@@ -87,6 +106,14 @@
       a
         min-width: auto
 
+  .sidebar
+    display: none
+
+  .btn-filter
+    display: flex
+
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .attention-info-box
@@ -126,6 +153,88 @@
   .btn-burger
     display: flex
 
+
+  .catalog
+    margin: 30px 0 50px
+    h1
+      text-align: left
+      margin: 0 0 20px
+
+  .nav-breadcrumb
+    margin: 30px 0
+
+  .sorting-wrapper
+    display: none
+
+  .filter-wrapper
+    margin: 0 0 20px
+
+  .catalog-card
+    padding: 28px 22px 23px
+    &__image
+      position: relative
+      top: 0
+      left: 0
+      max-width: 134px
+    &__img
+      width: 134px
+      height: 134px
+    &__head
+      width: calc(100% - 134px)
+      padding: 0 0 0 40px
+      flex-direction: column
+      align-items: flex-start
+    &__body
+      justify-content: flex-start
+      margin: 20px 0 0
+    &__footer
+      margin: 0
+      align-items: stretch
+    &__nav
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+
+  .button-group
+    flex-direction: column
+    align-items: flex-start
+
+  .price-wrapper
+    margin: 0 0 10px
+
+  .add-favorite
+    margin: 0 0 15px
+
+  .phone-user
+    margin: 15px 0 0
+
+  .location-user
+    width: 100%
+    margin: 0 0 19px
+
+  .location-user-item
+    margin: 0
+    width: 50%
+
+  .characteristics-box
+    width: 50%
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
+
+  .status-user
+    margin: 0
+
+  .sidebar
+    background: #E8E8E8
+    padding: 27px 10px 33px
+    overflow-y: auto
+    margin: 0 0 30px
+    .category-links
+      display: none
+
+  .form-filter
+    margin: 0
 
 
 
@@ -276,9 +385,60 @@
   .radio
     width: 50%
 
-@media only screen and (max-width: 480px)
-  /**/
+  .catalog
+    h1
+      font-size: 18px
 
+  .catalog-card
+    &__title
+      font-size: 18px
+
+    .list-rating
+      margin: 0 0 11px
+
+  .characteristics-box
+    font-size: 12px
+    h4
+      margin: 0 0 9px
+
+  .list-characteristics li
+    margin: 0 0 10px
+
+  .phone-user
+    font-size: 14px
+
+  .status-user, .phone-user__icon
+    width: 30px
+    height: 30px
+    min-width: 30px
+
+  .phone-user__icon
+    .svg-icon
+      width: 14px
+      height: 14px
+
+  .position-user
+    font-size: 11px
+
+  .questionnaires
+    font-size: 14px
+
+  .checkbox
+    font-size: 14px
+
+  .accordion
+    .card
+      max-width: 196px
+    .card-header
+      padding: 7px 0
+      font-size: 18px
+      &.collapsed
+        padding: 8px 13px 8px 20px
+    .card-body
+      padding: 10px 0 0
+
+  .breadcrumb
+    font-size: 14px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px)
@@ -290,4 +450,15 @@
     justify-content: center
 
 
+  .catalog-card__head
+    padding: 0 0 0 20px
 
+  .catalog-card__img
+    width: 110px
+    height: 110px
+
+  .catalog-card__image
+    max-width: 110px
+
+  .catalog-card__head
+    width: calc(100% - 110px)

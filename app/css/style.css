@@ -166,6 +166,17 @@ button, .btn {
     background: #fff;
     color: #000; }
 
+.btn-border-accent {
+  background: #fff;
+  border: 1px solid #FF004D;
+  font-size: 14px;
+  height: 35px;
+  color: #FF004D;
+  padding: 0 25px; }
+  .btn-border-accent:hover {
+    background: #FF004D;
+    color: #fff; }
+
 .btn-black {
   background: #000;
   color: #fff;
@@ -283,3 +294,30 @@ h2 {
   color: #FF004D; }
   .color-accent:hover {
     color: #000; }
+
+.nav-breadcrumb {
+  margin: 50px 0; }
+
+.breadcrumb {
+  padding: 0;
+  background: transparent;
+  border: none;
+    border-radius: 0;
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300; }
+  .breadcrumb a {
+    color: #000000; }
+    .breadcrumb a:after {
+      content: '-';
+      display: inline-block;
+      margin: 0 5px; }
+  .breadcrumb .active {
+    font-weight: normal;
+    color: #FF004D; }
+
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0; }
+  .breadcrumb-item + .breadcrumb-item:before {
+    display: none; }
